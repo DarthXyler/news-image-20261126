@@ -72,7 +72,7 @@ TILES = [
     (10, "EUROPE", "POLAND", "No-fly zone planned on eastern border", "noplane"),
     (11, "EUROPE", "UKRAINE", "30+ nations: Russia, stop CS gas", "gas"),
     (12, "EUROPE", "RUSSIA", "Record military budget; Merz warns", "bars"),
-    (13, "EUROPE", "UKRAINE", "Kyiv: Russian air base hit, 5 planes", "plane_hit"),
+    (13, "EUROPE", "UKRAINE", "Ukraine hits Russian air base: 5 planes", "plane_hit"),
     (14, "AMERICAS", "COLOMBIA", "17-hour siege ends, 76 hostages freed", "cart"),
     (15, "AFRICA", "NIGERIA", "Meth lab raid: 1.5 tonnes, 5 Mexicans held", "flask"),
     (16, "AFRICA", "S. AFRICA", "Ramaphosa wins Phala Phala court case", "gavel"),
