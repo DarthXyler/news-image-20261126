@@ -4,17 +4,18 @@
 [![rank](https://make.fun/badge/news-image-20261126/DarthXyler/news-image-20261126/rank.svg)](https://make.fun/bounty/news-image-20261126/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 [![reward](https://make.fun/badge/news-image-20261126/DarthXyler/news-image-20261126/reward.svg)](https://make.fun/bounty/news-image-20261126?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 
-**Thursday 26 November 2026: the world in one poster.** A 1024×1024 news poster of 31 stories from that day:
-six illustrated lead stories, 13 icon tiles, a world map with numbered pins and an "Also today" list.
+**Thursday 26 November 2026: 40 stories in one poster.** A 1024×1024 news poster of that day: ten illustrated
+stories, five picture tiles, ten icon tiles, a world map with a numbered pin for every story and an "Also today" list.
 
 ![The poster](entry.png)
 
 ## How it is made
 
-- `art/1.png` to `art/5.png`: text-free illustrations for lead stories 1 to 5, made in ChatGPT.
-- `tools/make_poster.py` (Python + Pillow) draws everything else: the story-6 illustration (Australia and
-  Solomon Islands), every icon, the map and **all text**. It checks that no headline overflows its box, and
-  saves `entry.png` under 1 MiB.
+- `art/1.png` to `art/15.png`: text-free illustrations made in ChatGPT (1-10 for the illustrated stories,
+  11-15 for the picture tiles).
+- `tools/make_poster.py` (Python + Pillow) draws everything else: every icon, the map and **all text**. It
+  checks that no headline overflows its box, spreads the map badges so none overlap, and saves `entry.png`
+  under 1 MiB.
 - `main.ts` (Node 22, standard library only, no network) checks the committed `entry.png` (PNG signature, every
   chunk's CRC, at most 1024×1024 and 1 MiB) and copies the same bytes to the output folder on every run.
 
